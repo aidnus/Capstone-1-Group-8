@@ -9,6 +9,8 @@ public class Path : MonoBehaviour
 
     public List<Transform> tilesList = new List<Transform>();
 
+    
+
 
     void Start()
     {
@@ -28,4 +30,6 @@ public class Path : MonoBehaviour
             }
         }
     }
+
+    
 }
