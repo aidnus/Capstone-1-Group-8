@@ -2,61 +2,66 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class PlayerPiece : MonoBehaviour
 {
-    
+
     public Path currentPath; 
     int pathPosition;
 
     public int steps;
 
-    bool isMoving;
+    public bool isMoving;
 
-
-    void Update() 
+    private void Update() 
     {
-        if (Input.GetKeyDown(KeyCode.Space) && !isMoving)
-        {
+        if (Input.GetKeyDown(KeyCode.Space) && !isMoving) {
             steps = Random.Range(1, 7);
-            Debug.Log("Dice rolled: " + steps);
+            Debug.Log("Dice Rolled: " + steps);
             
-            if (pathPosition + steps < currentPath.tilesList.Count)
-            {
+            if (pathPosition + steps < currentPath.tilesList.Count - 1) {
                 StartCoroutine(Move());
             }
-            else
-            {
-                Debug.Log("You can't move that far!");
+
+            else {
+                Debug.Log("Rolled Number is too high!");
             }
+
+
         }
-            
+    }
+
+    private void Start () {
+        currentPath = FindObjectOfType<Path>();
+        pathPosition = 0;
         
     }
+
     IEnumerator Move()
     {
-        if (isMoving)
-        {
+        if (isMoving) {
             yield break;
         }
-        isMoving = true;
+        isMoving = true; 
 
-        while (steps > 0)
-        {
+        while (steps > 0) {
             Vector3 nextTile = currentPath.tilesList[pathPosition + 1].position;
-            while(MoveToNextTile(nextTile))
-            {
+            while (MoveToNextNode(nextTile)) {
+                
                 yield return null;
             }
-            steps--;
-            pathPosition++;
-            
+            yield return new WaitForSeconds(0.1f);
+            steps--; 
+            pathPosition++; 
         }
 
+
         isMoving = false;
+        
     }
 
-    bool MoveToNextTile(Vector3 goal)
-    {
-        return goal != (transform.position = Vector3.MoveTowards(transform.position, goal, 2f * Time.deltaTime));
+    bool MoveToNextNode(Vector3 goal) {
+        return goal != (transform.position = Vector3.MoveTowards(transform.position, goal, 5f * Time.deltaTime));
     }
+
 }
