@@ -1,35 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class Path : MonoBehaviour
-{
-
-    Transform[] tiles;
-
-    public List<Transform> tilesList = new List<Transform>();
-
-    
-
-
-    void Start()
-    {
-        FillNodes();
-    }
-    void FillNodes()
-    {
-        tilesList.Clear();
-
-        tiles = GetComponentsInChildren<Transform>();
-
-        foreach (Transform tile in tiles)
-        {
-            if (tile != this.transform)
-            {
-                tilesList.Add(tile); 
-            }
-        }
-    }
-
-    
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1a701186dc1260cd2c34cacbe32cd498000f87ac08a7c8dd17ccab64dbf57758
+size 1369
