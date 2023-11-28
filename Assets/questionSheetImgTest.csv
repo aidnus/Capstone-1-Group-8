@@ -1,0 +1,37 @@
+question,answer,type,option1,option2,option3,option4
+Wire,Wire,PC,Voltmeter,NOT,Wire,Wires Joined
+Wires_Joined,Wire,PC,Wire,Cell,Battery,Solar Cell
+Wires_not_Joined,Fuse,PC,Fuse,AC supply,Light Emitting Diode,DC supply
+Cell,Cell,PC,NAND,Cell,Light Emitting Diode,Transformer
+Battery,Battery,PC,Resistor,Battery,EX-OR,AC supply
+Solar_Cell,Solar Cell,PC,Ohmmeter,Solar Cell,EX-NOR,Variable Capacitor
+DC_supply,DC supply,PC,Capacitor,DC supply,Inductor,NOR
+AC_supply,AC supply,PC,Wire,AC supply,Polarized Capacitor,Heater
+Fuse,Fuse,PC,Buzzer,Fuse,NOT,Diode
+Transformer,Transformer,PC,Transformer,Bell,AC supply,Capacitor
+Ground,Ground,PC,Ground,Voltmeter,Motor,Resistor
+Lamp_Lighting,Lamp,PC,Lamp,Galvanometer,NAND,Wire
+Lamp_Indicator,Lamp Indicator,PC,Variable Capacitor,Lamp Indicator,Wire,Oscilloscope
+Heater,Heater,PC,Heater,Light Emitting Diode,Wire,EX-NOR
+Motor,Motor,PC,AC supply,Motor,Wires Joined,Resistor
+Bell,Bell,PC,Wire,Bell,Transformer,Diode
+Buzzer,Buzzer,PC,Buzzer,EX-OR,AC supply,Light Emitting Diode
+Inductor,Inductor,PC,Inductor,Capacitor,Wire,NOT
+Resistor,Resistor,PC,Cell,Resistor,Wire,DC supply
+Capacitor,Capacitor,PC,AC supply,Capacitor,Light Emitting Diode,Battery
+Polarized_Capacitor,Polarized Capacitor,PC,Polarized Capacitor,Wire,EX-NOR,Wires not Joined
+Variable_Capacitor,Variable Capacitor,PC,Transformer,Variable Capacitor,NAND,Heater
+Diode,Diode,PC,DC supply,Diode,AC supply,Motor
+Led,Light Emitting Diode,PC,Light Emitting Diode,AC supply,DC supply,Wire
+Voltmeter,Voltmeter,PC,Resistor,Voltmeter,Wire,Light Emitting Diode
+Ammeter,Ammeter,PC,Ammeter,Wires Joined,Light Emitting Diode,Wire
+Galvanometer,Galvanometer,PC,EX-OR,Galvanometer,Light Emitting Diode,Wires Joined
+Ohmmeter,Ohmmeter,PC,Wires not Joined,Ohmmeter,EX-NOR,Wires Joined
+Oscilloscope,Oscilloscope,PC,DC supply,Oscilloscope,EX-NOR,Wire
+NOT,NOT,PC,Wires not Joined,NOT,Light Emitting Diode,DC supply
+AND,AND,PC,AC supply,AND,Wire,Lamp (indicator)
+NAND,NAND,PC,Lamp (lighting),NAND,AC supply,Wires Joined
+OR,OR,PC,OR,Wire,Wires Joined,Battery
+NOR,NOR,PC,NOR,Wires not Joined,Battery,Wire
+EXOR,EX-OR,PC,Wire,EX-OR,Buzzer,DC supply
+EXNOR,EX-NOR,PC,EX-NOR,Wire,Light Emitting Diode,Fuse
