@@ -1,51 +1,7 @@
 question,answer,type,option1,option2,option3,option4
-What is the Quantity given the Symbol (time-dependent) is v?,Voltage,MC,Voltage,Current,Power,Energy
-What is the Quantity given the Unit (full name) is Volt?,Voltage,MC,Volt,Ampere,Watt,Joule
-What is the Symbol (time-dependent) for the Quantity Voltage?,v,MC,v,i,p,w
-What is the Symbol (time-dependent) given the Unit (full name) is Volt?,v,MC,v,i,p,w
-What is the Unit (full name) for the Quantity Voltage?,Volt,MC,Volt,Ampere,Watt,Joule
-What is the Unit (full name) given the Symbol (time-dependent) is v?,Volt,MC,Volt,Ampere,Watt,Joule
-What is the Quantity given the Symbol (time-dependent) is i?,Current,MC,Voltage,Current,Power,Energy
-What is the Quantity given the Unit (full name) is Ampere?,Current,MC,Volt,Ampere,Watt,Joule
-What is the Symbol (time-dependent) for the Quantity Current?,i,MC,v,i,p,w
-What is the Symbol (time-dependent) given the Unit (full name) is Ampere?,i,MC,v,i,p,w
-What is the Unit (full name) for the Quantity Current?,Ampere,MC,Volt,Ampere,Watt,Joule
-What is the Unit (full name) given the Symbol (time-dependent) is i?,Ampere,MC,Volt,Ampere,Watt,Joule
-What is the Quantity given the Symbol (time-dependent) is p?,Power,MC,Voltage,Current,Power,Energy
-What is the Quantity given the Unit (full name) is Watt?,Power,MC,Volt,Ampere,Watt,Joule
-What is the Symbol (time-dependent) for the Quantity Power?,p,MC,v,i,p,w
-What is the Symbol (time-dependent) given the Unit (full name) is Watt?,p,MC,v,i,p,w
-What is the Unit (full name) for the Quantity Power?,Watt,MC,Volt,Ampere,Watt,Joule
-What is the Unit (full name) given the Symbol (time-dependent) is p?,Watt,MC,Volt,Ampere,Watt,Joule
-What is the Quantity given the Symbol (time-dependent) is w?,Energy,MC,Voltage,Current,Power,Energy
-What is the Quantity given the Unit (full name) is Joule?,Energy,MC,Volt,Ampere,Watt,Joule
-What is the Symbol (time-dependent) for the Quantity Energy?,w,MC,v,i,p,w
-What is the Symbol (time-dependent) given the Unit (full name) is Joule?,w,MC,v,i,p,w
-What is the Unit (full name) for the Quantity Energy?,Joule,MC,Volt,Ampere,Watt,Joule
-What is the Unit (full name) given the Symbol (time-dependent) is w?,Joule,MC,Volt,Ampere,Watt,Joule
-Current always takes the path of least resistance in a circuit.,FALSE,TF,TRUE,FALSE,,
-Resistors in parallel have a total resistance that is greater than the largest individual resistor.,FALSE,TF,TRUE,FALSE,,
-An open circuit has zero resistance.,TRUE,TF,FALSE,TRUE,,
-A closed switch in a circuit allows current to flow through it.,TRUE,TF,TRUE,FALSE,,
-Capacitors store electrical energy in the form of voltage.,TRUE,TF,TRUE,FALSE,,
-Voltage drop is the same across all components in a series circuit.,TRUE,TF,TRUE,FALSE,,
-Kirchhoffs Current Law states that the total current entering a junction is equal to the total current leaving the junction.,TRUE,TF,TRUE,FALSE,,
-Diodes only allow current to flow in one direction.,TRUE,TF,TRUE,FALSE,,
-Ohms Law relates voltage current and resistance through the formula V = IR.,TRUE,TF,TRUE,FALSE,,
-An ammeter is used to measure voltage in a circuit.,FALSE,TF,TRUE,FALSE,,
-In a parallel circuit the voltage across each component is the same.,TRUE,TF,TRUE,FALSE,,
-In a series circuit adding more resistors decreases the total resistance.,FALSE,TF,TRUE,FALSE,,
-Inductors store electrical energy in the form of charge.,FALSE,TF,TRUE,FALSE,,
-The power consumed by an electrical device can be calculated using the formula P = IV.,TRUE,TF,TRUE,FALSE,,
-Superconductors have zero resistance and can conduct electricity with no energy loss.,TRUE,TF,TRUE,FALSE,,
-A short circuit is a safe and intentional way to bypass a component in a circuit.,FALSE,TF,TRUE,FALSE,,
-Transistors can be used as both amplifiers and switches in electronic circuits.,TRUE,TF,TRUE,FALSE,,
-Grounding is used to provide a reference point in electrical circuits and improve safety.,TRUE,TF,TRUE,FALSE,,
-An inductor resists changes in current flow and stores energy in its magnetic field.,TRUE,TF,TRUE,FALSE,,
-Overloading a circuit by connecting too many devices can lead to overheating and electrical fires.,TRUE,TF,TRUE,FALSE,,
 Wire,Wire,PC,Voltmeter,NOT,Wire,Wires Joined
-Wires_Joined,Wires Joined,PC,Wire,Cell,Battery,Solar Cell
-Wires_not_Joined,Wires not Joined,PC,Fuse,AC supply,Light Emitting Diode,DC supply
+Wires_Joined,Wire,PC,Wire,Cell,Battery,Solar Cell
+Wires_not_Joined,Fuse,PC,Fuse,AC supply,Light Emitting Diode,DC supply
 Cell,Cell,PC,NAND,Cell,Light Emitting Diode,Transformer
 Battery,Battery,PC,Resistor,Battery,EX-OR,AC supply
 Solar_Cell,Solar Cell,PC,Ohmmeter,Solar Cell,EX-NOR,Variable Capacitor
@@ -53,9 +9,9 @@ DC_supply,DC supply,PC,Capacitor,DC supply,Inductor,NOR
 AC_supply,AC supply,PC,Wire,AC supply,Polarized Capacitor,Heater
 Fuse,Fuse,PC,Buzzer,Fuse,NOT,Diode
 Transformer,Transformer,PC,Transformer,Bell,AC supply,Capacitor
-Ground,Earth (Ground),PC,Earth (Ground),Voltmeter,Motor,Resistor
-Lamp_Lighting,Lamp (lighting),PC,Lamp (lighting),Galvanometer,NAND,Wire
-Lamp_Indicator,Lamp (indicator),PC,Variable Capacitor,Lamp (indicator),Wire,Oscilloscope
+Ground,Ground,PC,Ground,Voltmeter,Motor,Resistor
+Lamp_Lighting,Lamp,PC,Lamp,Galvanometer,NAND,Wire
+Lamp_Indicator,Lamp Indicator,PC,Variable Capacitor,Lamp Indicator,Wire,Oscilloscope
 Heater,Heater,PC,Heater,Light Emitting Diode,Wire,EX-NOR
 Motor,Motor,PC,AC supply,Motor,Wires Joined,Resistor
 Bell,Bell,PC,Wire,Bell,Transformer,Diode
